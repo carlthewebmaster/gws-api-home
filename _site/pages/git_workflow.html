@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Git Workflow</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/open-source-program-template/assets/img/usa_logo.png?v=1.2">
-        <link rel="stylesheet" href="/open-source-program-template/assets/css/normalize.css">
-        <link rel="stylesheet" href="/open-source-program-template/assets/css/main.css">
-        <link rel="stylesheet" href="/open-source-program-template/assets/css/syntax.css">
+        <link rel="shortcut icon" href="/gws-api-home/assets/img/usa_logo.png?v=1.2">
+        <link rel="stylesheet" href="/gws-api-home/assets/css/normalize.css">
+        <link rel="stylesheet" href="/gws-api-home/assets/css/main.css">
+        <link rel="stylesheet" href="/gws-api-home/assets/css/syntax.css">
         <!--[if lt IE 9]>
           <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-          <script src="/open-source-program-template/assets/js/respond.min.js"></script>
+          <script src="/gws-api-home/assets/js/respond.min.js"></script>
         <![endif]-->
 
     </head>
@@ -22,17 +22,17 @@
       <header role="banner">
 
       <!-- Fork Me at GitHub banner. Remove, of course -->
-      <a href="https://github.com/virtix/open-source-program-template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+      <!--      <a href="https://github.com/virtix/open-source-program-template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a> -->
       
 
       <div class="wrap">
         
-        <h1><a class="title-link" href="/open-source-program-template/">A Government Open Source Program</a></h1>
+        <h1><a class="title-link" href="/gws-api-home/">A Government Open Source Program</a></h1>
         <div style="float:right">
             <!-- This should be a configurable item in data/ -->
 
-            <a href="/open-source-program-template/index.html" class="title-link">
-                <img height="52" src="/open-source-program-template/assets/img/usa_logo.png" alt="Your agency logo">
+            <a href="/gws-api-home/index.html" class="title-link">
+                <img height="52" src="/gws-api-home/assets/img/usa_logo.png" alt="Your agency logo">
             </a>
         </div>
       </div>
@@ -47,44 +47,44 @@
     <ul>
       
         
-          <li><a href="/open-source-program-template/index.html">Home</a></li>
+          <li><a href="/gws-api-home/index.html">Home</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/guiding_principles.html">Guiding Principles</a></li>
+          <li><a href="/gws-api-home/pages/guiding_principles.html">Guiding Principles</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/oss_policy.html">Open Source Policy</a></li>
+          <li><a href="/gws-api-home/pages/oss_policy.html">Open Source Policy</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/news.html">News</a></li>
+          <li><a href="/gws-api-home/pages/news.html">News</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/open_by_default.html">Open By Default</a></li>
+          <li><a href="/gws-api-home/pages/open_by_default.html">Open By Default</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/faq.html">FAQs</a></li>
+          <li><a href="/gws-api-home/pages/faq.html">FAQs</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/workflows.html">Processes &amp; Procedures</a></li>
+          <li><a href="/gws-api-home/pages/workflows.html">Processes &amp; Procedures</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/references.html">References</a></li>
+          <li><a href="/gws-api-home/pages/references.html">References</a></li>
         
         
         
-          <li><a href="/open-source-program-template/pages/howto.html">How to configure this site</a></li>
+          <li><a href="/gws-api-home/pages/howto.html">How to configure this site</a></li>
         
         
 
         <!-- Prose.io edit link -->
-        <li><a href="http://prose.io#virtix/open-source-program-template/edit/gh-pages/pages/git_workflow.md" target="_blank">Edit this page on prose.io</a>
+        <li><a href="http://prose.io#virtix/gws-api-home/edit/gh-pages/pages/git_workflow.md" target="_blank">Edit this page on prose.io</a>
 </li>
     </ul>
   </nav>
@@ -122,10 +122,9 @@ that it reflects any changes made by others in the time since you initially made
 <p>Here’s that workflow as written in Git. If you’re ever in doubt about whether you’re doing things in the right 
 order, this simple workflow will keep you straight:</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git checkout master
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git checkout master
 <span class="gp">$</span> git pull
-<span class="gp">$</span> git checkout -b feature-A
-</code></pre></div>
+<span class="gp">$</span> git checkout -b feature-A</code></pre></div>
 
 <p>This last line creates a new branch (called <code>feature-A</code>) in your copy. A branch is a way of saying, “I’m going
 to work on this bug,” or “I’m going to code a new feature.” You should ALWAYS create a new branch, no matter how 
@@ -133,12 +132,11 @@ mundane your changes are going to be.</p>
 
 <p>Once you are done with your changes and are ready to commit them back to <code>master</code>:</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git commit -am <span class="s2">&quot;I just added a new feature&quot;</span>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git commit -am <span class="s2">&quot;I just added a new feature&quot;</span>
 <span class="gp">$</span> git checkout master
 <span class="gp">$</span> git pull
 <span class="gp">$</span> git merge feature-A
-<span class="gp">$</span> git push
-</code></pre></div>
+<span class="gp">$</span> git push</code></pre></div>
 
 <p>In order, these lines:</p>
 
@@ -193,16 +191,14 @@ repository and make pull requests. </li>
   <li>Create a remote in your repo that points to the YOUR ORGANIZATION NAME repo you’re working on:</li>
 </ul>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git remote add org_remote git://github.com/YOUR ORGANIZATION NAME/<span class="o">[</span>reponame<span class="o">]</span>.git
-<span class="gp">$</span> git fetch YOUR ORGANIZATION NAME
-</code></pre></div>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git remote add org_remote git://github.com/YOUR ORGANIZATION NAME/<span class="o">[</span>reponame<span class="o">]</span>.git
+<span class="gp">$</span> git fetch YOUR ORGANIZATION NAME</code></pre></div>
 
 <ul>
   <li><em>Merge early and often</em>, that is, keep your work in sync with YOUR ORGANIZATION NAME/origin.</li>
 </ul>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git pull --all org_remote
-</code></pre></div>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git pull --all org_remote</code></pre></div>
 
 <ul>
   <li>Always branch from <code>therepo/origin/master</code> when starting something new. </li>
@@ -217,9 +213,8 @@ a release with many features and people, use your name or initials in the branch
   <li>Delete branches once they have been merged:</li>
 </ul>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git branch -d bug-123
-<span class="gp">$</span> git push :origin/bug-123
-</code></pre></div>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git branch -d bug-123
+<span class="gp">$</span> git push :origin/bug-123</code></pre></div>
 
 <p>The first command deletes the local branch and the second one removed the remote branch.</p>
 
@@ -227,12 +222,11 @@ a release with many features and people, use your name or initials in the branch
   <li>Tag releases: </li>
 </ul>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git status
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git status
 <span class="go">        # On branch master</span>
 <span class="go">        nothing to commit (working directory clean)</span>
 <span class="gp">$</span> git tag -a v1.0.6
-<span class="gp">$</span> git push -tags
-</code></pre></div>
+<span class="gp">$</span> git push -tags</code></pre></div>
 
 <p>The tag command generates and annotated tag in the local repo, but you will also want to push this tag to the 
 remote. This is done with the last command.</p>
@@ -284,7 +278,7 @@ merges to <code>master</code>, pushes to his GitHub repo, and makes a pull reque
 production. He then removes the <code>bug-1</code> branch (<code>git branch -d bug-1</code>). He then checks out <code>feat-A</code>, 
 pulls from <code>master</code> to get the bug fix. Let’s look at this in detail:</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git status
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git status
 <span class="go">  # On branch feat-A</span>
 <span class="go">  # Changes to be committed:</span>
 <span class="go">  # (use &quot;git reset HEAD [file]...&quot; to unstage)</span>
@@ -294,46 +288,42 @@ pulls from <code>master</code> to get the bug fix. Let’s look at this in detai
 <span class="go">  # Changes not staged for commit:</span>
 <span class="go">  # (use &quot;git add [file]...&quot; to update what will be committed)</span>
 <span class="go">  #</span>
-<span class="go">  #  modified:   models.py</span>
-</code></pre></div>
+<span class="go">  #  modified:   models.py</span></code></pre></div>
 
 <p>At this point, Ross can commit his changes and checkout <code>master</code>, or he can stage his changes, stash them, and 
 then re-apply his stash once he’s finished his fix in <code>master</code>. The commit workflow is simple and well known; 
 let’s look at the more involved <code>stash</code> workflow:</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git stash
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git stash
 <span class="gp">$</span> git stash list
 <span class="go">  stash@{0}: WIP on feat-A: c8702a5 Coding all the features</span>
 <span class="gp">$</span> git checkout master
 <span class="gp">$</span> git pull origin master
-<span class="gp">$</span> git checkout -b bug-1
-</code></pre></div>
+<span class="gp">$</span> git checkout -b bug-1</code></pre></div>
 
 <p>Ross’s new <code>bug-1</code> branch, based on <code>master</code>, is ready for fixin’. Ross creates unit tests to confirm he 
 can replicate the bug, he fixes the bug, his tests go green. Ross commits his fixes to <code>bug-1</code> and merges.</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git add .
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git add .
 <span class="gp">$</span> git commit
 <span class="go">  # Good commit message goes here</span>
 <span class="gp">$</span> git checkout master
 <span class="gp">$</span> git merge bug-1
 <span class="gp">$</span> git branch -d bug-1
 <span class="gp">$</span> git push :origin/bug-1  <span class="c">#if he  had pushed this branch to his remote</span>
-<span class="gp">$</span> git push origin master
-</code></pre></div>
+<span class="gp">$</span> git push origin master</code></pre></div>
 
 <p>Ross now submits his pull request. He’s ready to get back to <code>feat-A</code>. If Ross had previously committed all his 
 work, he’d simply need to re-checkout his <code>feat-A</code> branch. However, he decided to <code>stash</code> instead of 
 <code>commit</code>, so he does this instead:</p>
 
-<div class="highlight"><pre><code class="console"><span class="gp">$</span> git status
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> git status
 <span class="go">  # On branch master</span>
 <span class="go">  nothing to commit (working directory clean)</span>
 <span class="gp">$</span> git fetch org_remote
 <span class="gp">$</span> git checkout feat-A
 <span class="gp">$</span> git pull
-<span class="gp">$</span> git stash apply --index
-</code></pre></div>
+<span class="gp">$</span> git stash apply --index</code></pre></div>
 
 <p>Ross is happy again. </p>
 
