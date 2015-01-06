@@ -8,14 +8,14 @@ pygments: true
 repo_name: gws-api-home 
 branch: gh-pages
 #GitHub organization name *or* username
-gh_org: virtix
+gh_org: carlthewebmaster
 prose_url: http://prose.io
 site_url: http://carlthewebmaster.github.io/gws-api-home
 media: assets/img
 
 
 # Your Programs's Name
-name: A Government Open Source Program
+name: NCBI Global Web Search &emdash; A Government Open Source Program
 subtitle: A set of templates and artifacts to support open source programs 
 
 # When using this template with a project page set the baseurl to '/project-name'
